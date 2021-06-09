@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Refresh" content="5; URL=https://infl.at/">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <style>
+    html {
+      width: 100%;
+      height: 100%;
+      height: -webkit-fill-available;
+      overflow: hidden;
+      position: fixed;
+    }
+
+    .announcement {
+      text-align: center;
+      height: min(100vh, 100%, 15rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-around;
+    }
+  </style>
+  <title>Redirecting to New URL</title>
+</head>
+
+<body>
+  <div class="announcement">
+    <h1>Redirecting to New URL</h1>
+    <h2><a href="https://infl.at/">https://infl.at/</a></h2>
+    <h3>Use the new URL.</h3>
+  </div>
+  <script>
+    const metaElement = document.querySelector("meta[http-equiv='Refresh'");
+    const metaUrl = metaElement.getAttribute("content").split(/=/)[1];
+    const anchorElement = document.querySelector("a");
+    if (anchorElement.getAttribute("href") !== metaUrl || anchorElement.textContent !== metaUrl) {
+      window.stop();
+      metaElement.remove();
+      anchorElement.setAttribute("href", "#");
+      anchorElement.textContent = "error";
+      console.error("mismatch");
+    }
+  </script>
+</body>
+
+</html>

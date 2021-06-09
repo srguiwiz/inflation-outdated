@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <link rel="icon" type="image/svg+xml" href="inflation-old.svg">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="512x512" href="inflation-old-512x512.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="inflation-old-256x256.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="inflation-old-128x128.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="inflation-old-96x96.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="inflation-old-72x72.png">
+  <link rel="apple-touch-icon" sizes="48x48" href="inflation-old-48x48.png">
+
+  <style>
+    html {
+      width: 100%;
+      height: 100%;
+      height: -webkit-fill-available;
+      overflow: hidden;
+      position: fixed;
+    }
+
+    .announcement {
+      text-align: center;
+      height: min(100vh, 100%, 15rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-around;
+    }
+
+    .uninstall,
+    .without-link {
+      display: none;
+    }
+
+    @media (display-mode: standalone) {
+
+      .uninstall,
+      .without-link {
+        display: unset;
+      }
+
+      .with-link {
+        display: none;
+      }
+    }
+  </style>
+  <title>Now from a New URL</title>
+</head>
+
+<body>
+  <div class="announcement">
+    <h1>Now from a New URL</h1>
+    <h2 class="with-link"><a href="https://infl.at/">https://infl.at/</a></h2>
+    <h2 class="without-link">https://infl.at/</h2>
+    <h3>Get the new version there.</h3>
+    <h4 class="uninstall">Uninstall this old version.</h4>
+  </div>
+</body>
+
+</html>

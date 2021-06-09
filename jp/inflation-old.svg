@@ -1,0 +1,22 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+  <rect width="24" height="24" stroke="none" fill="ghostwhite"/>
+  <path d="M0,23 2,23 4,22 8,21 10,20 12,19.5 14,19.5 17,18 18.5,9 20,6 22,4 24,3"
+        stroke="#888" stroke-width="2" fill="none"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M0,24 0,23 2,23 4,22 8,21 10,20 12,19.5 14,19.5 17,18 18.5,9 20,6 22,4 24,3 24,24"
+        stroke="none" fill="#cdc"
+        stroke-linejoin="round"/>
+  <path d="M4.5,6 c2,0 2,3 0,3 s-2,-3 0,-3
+            m3,-3 l0,4 q0,2 1,2
+            m2.5,-3 c2,0 2,3 0,3 s-2,-3 0,-3
+            m1.5,-3 l0,6"
+        stroke="#444" stroke-width="1" fill="none"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M3,12 l0,0
+            m0,2 l0,3
+            m3.5,-3 c-2.5,0 -2.5,3 0,3
+            m3,-3 c2,0 2,3 0,3 s-2,-3 0,-3
+            m3,0 l0,3 l0,-2 c0,-1.5 2.5,-1.5 2.5,0 l0,2"
+        stroke="#444" stroke-width="1" fill="none"
+        stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

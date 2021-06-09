@@ -1,0 +1,38 @@
+{
+  "name": "Inflation Calculator – Old Version",
+  "short_name": "Inflation-Old",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "An old version of an inflation calculator.",
+  "icons": [
+    {
+      "src": "./inflation-old-512x512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./inflation-old-256x256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "./inflation-old-128x128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./inflation-old-96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./inflation-old-72x72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "./inflation-old-48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./inflation-old.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512"
+    }
+  ]
+}
